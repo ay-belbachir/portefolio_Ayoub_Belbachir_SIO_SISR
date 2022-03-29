@@ -8,7 +8,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27AE60;
+  --color-secondary: #C054BE;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -17,7 +17,7 @@
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
-  --color-grey-6: #12181b;
+  --color-grey-6: #1F2933;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
@@ -489,7 +489,13 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 70%;
 }
-
+.SOMMAIRE {
+text-align: center;
+position: relative;
+}
+.SOMMAIRE h2 span {
+  color: var(--color-secondary);
+}
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -515,8 +521,9 @@ section {
   font-size: 1.4rem;
   text-align: center;
   position: relative;
+  line-break: auto;
 }
-
+ 
 .stat-ti::before {
   content: '';
   position: absolute;
@@ -590,15 +597,6 @@ section {
   font-size: 1.3rem;
 }
 
-.timeline .timeline-item .tl-duration {
-  padding: .2rem .6rem;
-  background-color: var(--color-grey-5);
-  border-radius: 15px;
-  display: inline-block;
-  font-size: .8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
 
 .timeline .timeline-item h5 {
   padding: 1rem 0;
@@ -626,7 +624,7 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
