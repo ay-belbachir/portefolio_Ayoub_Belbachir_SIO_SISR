@@ -33,6 +33,11 @@ function PageTransitions(){
             element.classList.add('active');
         }
     })
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(elems, options);
+      });
 
     //Toggle theme
     const themeBtn = document.querySelector('.theme-btn');
