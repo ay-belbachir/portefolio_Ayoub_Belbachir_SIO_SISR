@@ -5,7 +5,7 @@ const allSections = document.querySelector('.main-content');
 
 
 function PageTransitions(){
-    //Button click active class
+    //CLICK pour les bouton
     for(let i = 0; i < sectBtn.length; i++){
         sectBtn[i].addEventListener('click', function(){
             let currentBtn = document.querySelectorAll('.active-btn');
@@ -14,17 +14,17 @@ function PageTransitions(){
         })
     }
 
-    //Sctions Active 
+    //la section active
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;
         if(id){
-            //resmove selected from the other btns
+            //enleve l'ancian btn selectioner
             sectBtns.forEach((btn) =>{
                 btn.classList.remove('active')
             })
             e.target.classList.add('active')
 
-            //hide other sections
+            //cacher les autre section 
             sections.forEach((section)=>{
                 section.classList.remove('active')
             })
@@ -39,7 +39,7 @@ function PageTransitions(){
         var instances = M.Tooltip.init(elems, options);
       });
 
-    //Toggle theme
+    //boutton them
     const themeBtn = document.querySelector('.theme-btn');
     themeBtn.addEventListener('click',() =>{
         let element = document.body;

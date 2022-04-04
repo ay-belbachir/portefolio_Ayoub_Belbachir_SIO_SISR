@@ -162,6 +162,7 @@ section {
   transition: all .4s ease-in-out;
 }
 
+
 .controlls .active-btn i {
   color: var(--color-white) !important;
 }
@@ -989,7 +990,7 @@ transition: 0s;
 .about-container .left-about p {
   padding-left: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   header {
     padding: 0 !important;
   }
@@ -1003,7 +1004,18 @@ transition: 0s;
     padding-bottom: 6rem;
   }
   .left-header .h-shape {
-    display: none;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+            clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+    
   }
   .right-header {
     -ms-grid-row: 1;
@@ -1020,6 +1032,34 @@ transition: 0s;
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+  }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+ 
+}
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: var(--color-grey-5);
+    color: var(--color-white);
+    text-align: center;
+    border-radius: 6px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    bottom: 4em ;
+    right: -2em ;
+    z-index: 3;
+    padding: 6px 12px;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: 0s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
   }
   .controlls {
     top: auto;
@@ -1214,9 +1254,7 @@ transition: 0s;
         grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
-  .left-header .h-shape {
-    display: none;
-  }
+ 
   .left-header .image {
     width: 90% !important;
     margin: 0 auto !important;
