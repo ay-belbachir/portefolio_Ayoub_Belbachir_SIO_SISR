@@ -106,12 +106,58 @@ section {
           transform: translateY(0) scale(1);
 }
 
+
+
+.animbtn {
+  -webkit-animation: leftanim ;
+  animation-duration: 1s;
+}
+.animbtn1 {
+  -webkit-animation: leftanim ;
+  animation-duration: 1500ms;
+}
+.animbtn2 {
+  -webkit-animation: leftanim ;
+  animation-duration: 2000ms;
+}
+.animbtn3 {
+  -webkit-animation: leftanim ;
+  animation-duration: 2500ms;
+}
+.animbtn4 {
+  -webkit-animation: leftanim ;
+  animation-duration: 3000ms;
+}
+.animbtn5 {
+  -webkit-animation: leftanim ;
+  animation-duration: 3500ms;
+}
+
+
+@-webkit-keyframes leftanim {
+	0% {
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translateX(-30px);
+	}
+
+	80% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
 .active {
   display: block;
   -webkit-animation: scaleAnim 1s ease-in-out;
           animation: scaleAnim 1s ease-in-out;
 }
-
 @-webkit-keyframes scaleAnim {
   0% {
     -webkit-transform: translateY(-100%) scaleY(0);
@@ -990,7 +1036,7 @@ transition: 0s;
 .about-container .left-about p {
   padding-left: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   header {
     padding: 0 !important;
   }
@@ -1077,6 +1123,7 @@ transition: 0s;
     width: 100%;
     background-color: var(--color-grey-5);
   }
+  
   .controlls .control {
     margin: 1rem .3rem;
   }
