@@ -538,6 +538,13 @@ border-radius: 4px;
 pointer-events: none;
 transition: 0s;
 }
+.tooltip:hover .control {
+  box-shadow: 0 0 50px var(--color-secondary);
+}
+.tooltip:hover .theme-btn {
+  box-shadow: 0 0 50px var(--color-secondary);
+}
+
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -1103,6 +1110,8 @@ transition: 0s;
   pointer-events: none;
   transition: 0s;
   }
+
+ 
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
