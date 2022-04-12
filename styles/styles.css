@@ -127,12 +127,55 @@ section {
 .animbtn4 {
   -webkit-animation: leftanim ;
   animation-duration: 3000ms;
+
 }
 .animbtn5 {
   -webkit-animation: leftanim ;
   animation-duration: 3500ms;
 }
 
+.animbtn i {
+  animation: iconesmouth 3s;
+}
+.animbtn1 i {
+  animation: iconesmouth 3500ms;
+}
+.animbtn2 i{
+  animation: iconesmouth 5s;
+}
+.animbtn3 i {
+  animation: iconesmouth 5500ms;
+}
+.animbtn4 i {
+  animation: iconesmouth 6s;
+}
+
+.animbtn5 i {
+  animation: iconesmouth 7s;
+}
+
+
+
+@keyframes iconesmouth {
+  0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+    transform: rotate(40deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+  75% {
+		transform: rotate(-40deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
 
 @-webkit-keyframes leftanim {
 	0% {
@@ -180,6 +223,7 @@ section {
   }
 }
 
+
 .controlls {
   position: fixed;
   z-index: 10;
@@ -211,6 +255,7 @@ section {
 
 .controlls .active-btn i {
   color: var(--color-white) !important;
+  
 }
 
 .controlls .control {
@@ -238,6 +283,7 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
+ 
 }
 
 .theme-btn {
@@ -327,6 +373,7 @@ section {
   transition: all .4s ease-in-out;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+          border-radius: 10px;
 }
 
 .header-content .left-header .image img:hover {
@@ -538,13 +585,13 @@ border-radius: 4px;
 pointer-events: none;
 transition: 0s;
 }
-.tooltip:hover .control {
-  box-shadow: 0 0 50px var(--color-secondary);
-}
-.tooltip:hover .theme-btn {
-  box-shadow: 0 0 50px var(--color-secondary);
-}
-
+ .tooltip:hover .control {
+    box-shadow: 0 0 50px var(--color-secondary);
+  }
+  .tooltip:hover .theme-btn {
+    box-shadow: 0 0 50px var(--color-secondary);
+  }
+  
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -983,6 +1030,36 @@ transition: 0s;
   border-radius: 50%;
   padding: 1rem;
 }
+.linebreak {
+  margin-bottom:20px;
+}
+
+.espace{
+margin-right:20px; 
+}
+
+.btn-con:hover i{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+}
+}
+
 
 .main-btn::before {
   content: '';
