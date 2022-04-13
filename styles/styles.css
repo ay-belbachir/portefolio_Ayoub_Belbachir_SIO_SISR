@@ -585,6 +585,24 @@ border-radius: 4px;
 pointer-events: none;
 transition: 0s;
 }
+.tooltip .tooltiptexttheme {
+  visibility: hidden;
+  width: 160px;
+  background-color: var(--color-grey-5);
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  right: calc(100% + 5px);
+  z-index: 3;
+  padding: 6px 12px;
+border-radius: 4px;
+pointer-events: none;
+transition: 0s;
+}
  .tooltip:hover .control {
     box-shadow: 0 0 50px var(--color-secondary);
   }
@@ -594,6 +612,9 @@ transition: 0s;
   
 
 .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptexttheme {
   visibility: visible;
 }
 
@@ -1187,7 +1208,24 @@ margin-right:20px;
   pointer-events: none;
   transition: 0s;
   }
-
+  .tooltip .tooltiptexttheme {
+    visibility: hidden;
+    width: 160px;
+    background-color: var(--color-grey-5);
+    color: var(--color-white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    right: 3em;
+    z-index: 3;
+    padding: 6px 12px;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: 0s;
+  }
  
   
   .tooltip:hover .tooltiptext {
@@ -1409,6 +1447,8 @@ margin-right:20px;
 @media screen and (max-width: 700px) {
   .section {
     padding: 7rem 3rem;
+    max-width: 100%;
+overflow-x: hidden;
   }
  
   .about-container .right-about {
