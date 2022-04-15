@@ -1155,18 +1155,8 @@ margin-right:20px;
     padding-bottom: 6rem;
   }
   .left-header .h-shape {
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    width: 65%;
-    height: 100%;
-    background-color: var(--color-secondary);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-            clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-    
+    visibility: hidden;
+
   }
   .right-header {
     -ms-grid-row: 1;
