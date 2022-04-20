@@ -162,12 +162,10 @@ section {
 	}
 
 	25% {
-    transform: rotate(40deg);
+    transform: rotate(80deg);
 	}
 
-	50% {
-		transform: rotate(0deg);
-	}
+
   75% {
 		transform: rotate(-40deg);
 	}
