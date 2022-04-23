@@ -1239,7 +1239,41 @@ margin-right:20px;
     width: 100%;
     background-color: var(--color-grey-5);
   }
-  
+  .controlls::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 5%;
+      width: 100%;
+      transform: scale(0.9) translateZ(0);
+      filter: blur(3px);
+      background: linear-gradient(
+        to left,
+        #ff5770,
+        #e4428d,
+        #c42da8,
+        #9e16c3,
+        #6501de,
+        #9e16c3,
+        #c42da8,
+        #e4428d,
+        #ff5770
+      );
+      background-size: 200% 200%;
+      animation: Glow 1.25s linear infinite;
+    }
+    @keyframes Glow {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 200% 50%;
+      }
+    }
+    
+  }
   .controlls .control {
     margin: 1rem .3rem;
   }
