@@ -221,9 +221,7 @@ section {
   }
 }
 
-.mrleft{
-  margin-left: 1rem;
-}
+
 .controlls {
   position: fixed;
   z-index: 10;
@@ -1062,7 +1060,9 @@ transition: 0s;
 .espace{
 margin-right:20px; 
 }
-
+.dernierbtn{
+align-self: center;
+}
 .main-btn:hover i{
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
