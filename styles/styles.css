@@ -220,7 +220,9 @@ section {
             transform: translateY(0) scaleY(1);
   }
 }
-
+.mrleft {
+  margin-left: 7px;
+}
 
 .controlls {
   position: fixed;
