@@ -756,6 +756,11 @@ transition: 0s;
       -ms-flex-align: center;
           align-items: center;
 }
+.fa-download:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
 
 .portfolios .portfolio-item .hover-items .icons .icon {
   background-color: var(--color-primary);
