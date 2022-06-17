@@ -314,6 +314,9 @@ section {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
+.contacthover:hover {
+	color: var(--color-secondary)
+}
 
 .theme-btn i {
   font-size: 1.4rem;
